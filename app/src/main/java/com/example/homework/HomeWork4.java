@@ -1,7 +1,6 @@
-package com.example.homework4;
+package com.example.homework;
 
 import java.util.Scanner;
-
 public class HomeWork4 {
     public static void main(String[] args) {
 
