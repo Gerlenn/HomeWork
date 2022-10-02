@@ -1,4 +1,4 @@
-package com.example.homework4;
+package com.example.homework;
 
 public class Phone {
     String number;
