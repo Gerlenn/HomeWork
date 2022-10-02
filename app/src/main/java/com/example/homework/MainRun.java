@@ -6,7 +6,6 @@ public class MainRun {
         Crow crow = new Crow();
         pigeon.fly();
         crow.fly();
-
     }
 }
 
@@ -27,4 +26,3 @@ class Crow extends Bird{
 abstract class Bird {
     abstract void fly();
 }
-
