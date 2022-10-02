@@ -1,6 +1,7 @@
 package com.example.homework;
 
 public class MainRun {
+
     public static void main(String[] args) {
         Pigeon pigeon = new Pigeon();
         Crow crow = new Crow();
