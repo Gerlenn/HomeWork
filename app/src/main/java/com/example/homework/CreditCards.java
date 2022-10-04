@@ -29,13 +29,13 @@ public class CreditCards {
     }
 
     public static void main(String[] args) {
-        CreditCards cardOne = new CreditCards(1111, 10);
-        CreditCards cardTwo = new CreditCards(2222, 20);
-        CreditCards cardThree = new CreditCards(3333, 30);
+        CreditCards cardOne = new CreditCards(112345, 10);
+        CreditCards cardTwo = new CreditCards(123934, 20);
+        CreditCards cardThree = new CreditCards(412141, 30);
 
         cardOne.creditingToTheAccount(100);
         cardTwo.creditingToTheAccount(500);
-        cardThree.withdrawFromTheAccount(31);
+        cardThree.withdrawFromTheAccount(30);
 
         cardOne.accountInformation();
         cardTwo.accountInformation();
