@@ -10,7 +10,7 @@ public class CreditCards {
         generalAmount = currentAmount + accrualAmount;
     }
 
-    void withdrawFromTheAccount(int withdrawalAmount){// снятие со счёта
+    void withdrawFromTheAccount(int withdrawalAmount){// снять со счёта
         if (withdrawalAmount > currentAmount)
             System.out.println("Недостаточно средств на счёте "+ accountNumber +"!" + "\nДля снятия доступно " + currentAmount + "\n");
             generalAmount = currentAmount;
