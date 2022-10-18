@@ -24,8 +24,8 @@ class Tasks2 {
     public static void main(String[] args) {
         int[][][] array = {{{1, 2, 3, 4}, {2, 3, 4, 5}, {3, 4, 5, 6}}, {{1, 2, 3, 4}, {2, 3, 4, 5}, {3, 4, 5, 6}}};
         for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < 3; j++) {
-                for (int k = 0; k < 4; k++) {
+            for (int j = 0; j < array[i].length; j++) {
+                for (int k = 0; k < array[i][j].length; k++) {
                     System.out.print(array[i][j][k] + "\t");
                 }
                 System.out.println();
@@ -103,7 +103,7 @@ class Tasks4 {
         int[][][] array = new int[3][3][3];
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
-                for (int k = 0; k < array[j].length; k++) {
+                for (int k = 0; k < array[i][j].length; k++) {
                     array[i][j][k] = random.nextInt(10);
                     System.out.print(array[i][j][k] + "\t");
                 }
