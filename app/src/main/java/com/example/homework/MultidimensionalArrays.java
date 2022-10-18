@@ -19,7 +19,7 @@ public class MultidimensionalArrays {
     }
 }
 
-class tasks2 {
+class Tasks2 {
 
     public static void main(String[] args) {
         int[][][] array = {{{1, 2, 3, 4}, {2, 3, 4, 5}, {3, 4, 5, 6}}, {{1, 2, 3, 4}, {2, 3, 4, 5}, {3, 4, 5, 6}}};
@@ -96,7 +96,7 @@ class Task3 {
     }
 }
 
-class tasks4 {
+class Tasks4 {
 
     public static void main(String[] args) {
         Random random = new Random();
