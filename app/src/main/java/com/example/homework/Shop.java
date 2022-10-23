@@ -16,7 +16,7 @@ public class Shop {
         if (productListShop.containsKey(id)) {
             System.out.println("Such a product already exists\n");
         } else {
-            productListShop.put(product.idProduct, new Product(product.getIdProduct(), product.getNameProduct(), product.getPriceProduct()));
+            productListShop.put(product.idProduct, product);
         }
     }
 
