@@ -11,14 +11,6 @@ public class Product {
         this.priceProduct = priceProduct;
     }
 
-    public int getIdProduct() {
-        return idProduct;
-    }
-
-    public String getNameProduct() {
-        return nameProduct;
-    }
-
     public int getPriceProduct() {
         return priceProduct;
     }
