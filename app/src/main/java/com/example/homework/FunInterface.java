@@ -1,6 +1,6 @@
 package com.example.homework;
 
-public class FunInterface_Task1 {
+public class FunInterface {
 
     public static void main(String[] args) {
         Child child = new Child(10 , "Alisa", 123);
