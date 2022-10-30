@@ -17,7 +17,7 @@ public class HomeWorkThreads {
         Thread thread = new Thread() {
             @Override
             public void run() {
-                System.out.println("Running (Thread) in anonymous class");
+                System.out.println("Running (Thread) in anonymous class. Name thread is " + Thread.currentThread().getName());
             }
         };
         thread.start();
@@ -25,7 +25,7 @@ public class HomeWorkThreads {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                System.out.println("Running (Runnable) in anonymous class");
+                System.out.println("Running (Runnable) in anonymous class. Name thread is " + Thread.currentThread().getName());
             }
         };
         //Passing a Runnable thread to another thread for execution and starting it - Task 3
@@ -38,7 +38,7 @@ class ThreadClass extends Thread {
 
     @Override
     public void run() {
-        System.out.println("First Thread(Thread)");
+        System.out.println("First Thread(Thread). Name thread is " + Thread.currentThread().getName());
     }
 }
 
@@ -48,8 +48,7 @@ class ThreadClass1 implements Runnable {
     public void run() {
         try {
             sleep(5000);
-            Thread thread = Thread.currentThread();
-            System.out.println("I run this code in: " + thread.getName());
+            System.out.println("I run this code in: Name thread is " + Thread.currentThread().getName());
         } catch (Exception e) {}
     }
 }
