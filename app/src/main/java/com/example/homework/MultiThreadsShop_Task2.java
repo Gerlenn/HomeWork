@@ -1,5 +1,5 @@
 package com.example.homework;
-// не совсем получилось, не могу понять, почему остаётся 1 товар в остатке
+
 public class MultiThreadsShop_Task2 {
     public static void main(String[] args) {
         SecondStore store = new SecondStore();
@@ -20,7 +20,7 @@ class ProducerSecond implements Runnable{
 
     @Override
     public void run() {
-        for (int i = 1; i < 10; i++) {
+        for (int i = 1; i < 11; i++) {
             store.put();
         }
     }
@@ -35,7 +35,7 @@ class ConsumerSecond implements Runnable{
 
     @Override
     public void run() {
-        for (int i = 1; i < 5; i++) {
+        for (int i = 1; i < 6; i++) {
             store.get();
         }
     }
