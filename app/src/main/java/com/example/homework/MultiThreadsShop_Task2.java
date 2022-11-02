@@ -1,7 +1,5 @@
 package com.example.homework;
-
-import static java.lang.Thread.sleep;
-
+// не совсем получилось, не могу понять, почему остаётся 1 товар в остатке
 public class MultiThreadsShop_Task2 {
     public static void main(String[] args) {
         SecondStore store = new SecondStore();
@@ -67,7 +65,7 @@ class SecondStore {
     }
 
     synchronized void put(){
-        while (product > 2){
+        while (product == 2){
             try {
                 wait();
             }catch (InterruptedException e){
